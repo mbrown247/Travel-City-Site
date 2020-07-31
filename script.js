@@ -82,3 +82,10 @@ const navUL = document.getElementById('nav-ul');
 hamburger.addEventListener('click', () => {
     navUL.classList.toggle('show');
 })
+
+const checkbox = document.getElementById('checkbox');
+
+checkbox.addEventListener('change', () => {
+    // change the theme of the website
+    document.body.classList.toggle('dark');
+})
