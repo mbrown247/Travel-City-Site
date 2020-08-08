@@ -1,11 +1,3 @@
-// const sunMoonContainer = document.querySelector('.sun-moon-container')
-
-// document.querySelector('.theme-toggle-button').addEventListener('click', () => {
-//     document.body.classList.toggle('dark')
-//     const currentRotation = parseInt(getComputedStyle(sunMoonContainer).getPropertyValue('--rotation'))
-//     sunMoonContainer.style.setProperty('--rotation', currentRotation + 180)
-// })
-
 const TypeWriter = function (txtElement, words, wait = 3000) {
     this.txtElement = txtElement;
     this.words = words;
@@ -83,9 +75,15 @@ hamburger.addEventListener('click', () => {
     navUL.classList.toggle('show');
 })
 
-const checkbox = document.getElementById('checkbox');
+// const checkbox = document.getElementById('checkbox');
 
-checkbox.addEventListener('change', () => {
-    // change the theme of the website
+// checkbox.addEventListener('change', () => {
+//     // change the theme of the website
+//     document.body.classList.toggle('dark');
+// })
+
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
     document.body.classList.toggle('dark');
-})
+});
