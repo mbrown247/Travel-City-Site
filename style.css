@@ -422,15 +422,18 @@ body.dark {
 }
 
 .menu {
-  margin: 0;
-  padding: 0;
+  display: inline-block;
+  
+  /* margin: 0 -2px; */
+  padding: 20px;
   font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
   background-color: none;
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 
 .newsletter {
@@ -440,6 +443,10 @@ body.dark {
   min-height: 100vh;
   box-sizing: border-box;
   display: flex;
+}
+
+#item1 {
+  text-align: center;
 }
 
 @media(min-width: 1200px) {
@@ -487,3 +494,10 @@ body.dark {
 .toggle {
   text-align: center;
 }
+
+@media screen and (max-width: 767px) {
+  .sm {
+    display: none;
+  }
+}
+
