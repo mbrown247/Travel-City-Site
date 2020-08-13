@@ -441,6 +441,28 @@ body.dark {
   text-align: center;
 }
 
+.gallery {
+  margin: 20px;
+  padding: 0;
+}
+
+.gallery-container {
+max-width: 760px;
+margin: auto;
+border: #fff solid 3px;
+}
+
+.main-img img, .imgs img{
+  width: 100%;
+}
+
+.imgs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+
 @media(min-width: 1200px) {
   h1 {
     font-size: 5rem;

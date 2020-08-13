@@ -75,15 +75,15 @@ hamburger.addEventListener('click', () => {
     navUL.classList.toggle('show');
 })
 
-// const checkbox = document.getElementById('checkbox');
-
-// checkbox.addEventListener('change', () => {
-//     // change the theme of the website
-//     document.body.classList.toggle('dark');
-// })
 
 const chk = document.getElementById('chk');
 
 chk.addEventListener('change', () => {
     document.body.classList.toggle('dark');
 });
+
+// const current = document.querySelector('#current');
+// const imgs = document.querySelectorAll('.imgs img');
+
+// imgs.forEach(img => img.addEventListener('click', e => (current.src = e.target.src))
+// );
